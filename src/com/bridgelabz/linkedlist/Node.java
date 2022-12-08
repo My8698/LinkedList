@@ -3,14 +3,27 @@ package com.bridgelabz.linkedlist;
  *creating single node
  */
 public class Node<T> {
-    T data;
+    private T data;
     Integer s;
-    Node<T> next;
+    private Node<T> next;
     public Node(){
     }
     public void compare(){
     }
-    public Node(T data){
+    public Node(T data)
+    {
         this.data=data;
+    }
+    public T getData(){
+        return data;
+    }
+    public void setData(T data){
+        this.data=data;
+    }
+    public Node<T> getNext(){
+        return next;
+    }
+    public void setNext(Node<T> next){
+        this.next=next;
     }
 }
