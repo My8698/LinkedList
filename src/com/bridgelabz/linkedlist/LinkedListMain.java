@@ -16,5 +16,15 @@ public class LinkedListMain {
         list2.append(70);
         System.out.println("Linked list for list2 is->");
         list2.show();
+/**
+ * insert 30 between 56 and 70
+ */
+        LinkedList<Integer> list3 = new LinkedList();
+        list3.append(56);
+
+        list3.append(70);
+        list3.searchAndInsert(56, 30);
+        System.out.println("Linked list for list3 is->");
+        list3.show();
     }
 }
