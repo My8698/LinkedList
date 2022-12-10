@@ -79,9 +79,6 @@ public class LinkedList<T> {
     /**
      *delete last element of linkedlist
      */
-    /**
-     *delete last element of linkedlist
-     */
     T popLast() {
         T data = tail.getData();
         if(head == null) {
@@ -95,4 +92,17 @@ public class LinkedList<T> {
         tail.setNext(null);
         return data;
     }
+    /**
+     * search node in linked list
+
+    public Node<T> search(T searchData){
+        Node<T> temp=head;
+        while (temp!=null){
+            if (temp.getData().equals(searchData))
+                return temp;
+            temp=temp.getNext();
+        }
+
+        return null;
+    }**/
 }

@@ -45,5 +45,14 @@ public class LinkedListMain {
         list5.popLast();
         System.out.println("Linked list for list5 after deleting last element in linked list is->");
         list5.show();
+      System.out.println("****************************");
+        LinkedList<Integer> list6=new LinkedList();
+        list6.push(70);
+        list6.push(30);
+        list6.push(56);
+        if (list6.search(30)==null)
+            System.out.println("Element not found!");
+        else
+            System.out.println("Element Found");
     }
 }
