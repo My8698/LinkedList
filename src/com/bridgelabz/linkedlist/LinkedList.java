@@ -79,5 +79,20 @@ public class LinkedList<T> {
     /**
      *delete last element of linkedlist
      */
-
+    /**
+     *delete last element of linkedlist
+     */
+    T popLast() {
+        T data = tail.getData();
+        if(head == null) {
+            return null;
+        }
+        Node<T> secondLast = head;
+        while(secondLast.getNext()!= tail) {
+            secondLast = secondLast.getNext();
+        }
+        tail = secondLast;
+        tail.setNext(null);
+        return data;
+    }
 }

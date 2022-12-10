@@ -35,7 +35,15 @@ public class LinkedListMain {
         list4.popFirst();
         System.out.println("Linked list for list4 after deleting first element in linked list is->");
         list4.show();
-
+        /**
+         * delete last element of linkedlist
+         */
+        LinkedList<Integer> list5=new LinkedList<>();
+        list5.push(70);
+        list5.push(30);
+        list5.push(56);
+        list5.popLast();
+        System.out.println("Linked list for list5 after deleting last element in linked list is->");
+        list5.show();
     }
-
 }
