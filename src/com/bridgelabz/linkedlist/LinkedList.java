@@ -69,4 +69,15 @@ public class LinkedList<T> {
         }
         return null;
     }
+    /**
+     *delete first element of linkedlist
+     */
+    public void popFirst() {
+        Node<T> temp = head.getNext();
+        head = temp;
+    }
+    /**
+     *delete last element of linkedlist
+     */
+
 }

@@ -21,10 +21,21 @@ public class LinkedListMain {
  */
         LinkedList<Integer> list3 = new LinkedList();
         list3.append(56);
-
         list3.append(70);
         list3.searchAndInsert(56, 30);
         System.out.println("Linked list for list3 is->");
         list3.show();
+        /**
+         *delete first element of node
+         */
+        LinkedList<Integer> list4 = new LinkedList();
+        list4.push(70);
+        list4.push(30);
+        list4.push(56);
+        list4.popFirst();
+        System.out.println("Linked list for list4 after deleting first element in linked list is->");
+        list4.show();
+
     }
+
 }
