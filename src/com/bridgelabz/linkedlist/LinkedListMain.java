@@ -69,5 +69,17 @@ public class LinkedListMain {
             System.out.println("Element Search unsucessful!");
 
         list7.show();
+        System.out.println("***************************");
+        LinkedList<Integer> list8=new LinkedList();
+        list8.push(70);
+        list8.push(40);
+        list8.push(30);
+        list8.push(56);
+        System.out.println("Display LinkedList of Elements");
+        list8.show();
+        System.out.println("LinkedList after deleting of Element");
+        list8.popSearchNode(40);
+        list8.show();
+        System.out.println("Count of nodes present in the LinkedList is\n"+list8.countNodes());
     }
 }

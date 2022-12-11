@@ -92,17 +92,32 @@ public class LinkedList<T> {
         tail.setNext(null);
         return data;
     }
-    /**
-     * search node in linked list
-
-    public Node<T> search(T searchData){
+    public boolean  popSearchNode(T searchDeleteData)
+    {
+        Node<T> deleteNode=search(searchDeleteData);
         Node<T> temp=head;
         while (temp!=null){
-            if (temp.getData().equals(searchData))
-                return temp;
+            if (temp==deleteNode){
+                head=deleteNode.getNext();
+                break;
+            }
+            else if (temp.getNext()==deleteNode) {
+                temp.setNext(deleteNode.getNext());
+                deleteNode.setNext(null);
+                return true;
+            }
             temp=temp.getNext();
         }
+        return false;
+    }
+    public int countNodes(){
+        int count=0;
+        Node current=head;
 
-        return null;
-    }**/
+        while (current!=null){
+            count++;
+            current=current.getNext();
+        }
+        return count;
+    }
 }
