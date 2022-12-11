@@ -11,4 +11,12 @@ public class Stack<E> {
     {
         linkedList.show();
     }
+    public void peak()
+    {
+        System.out.println(linkedList.head.getData());
+    }
+    public void popStack()
+    {
+        linkedList.popFirst();
+    }
 }
