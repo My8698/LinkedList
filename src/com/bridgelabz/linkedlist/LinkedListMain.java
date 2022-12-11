@@ -45,6 +45,9 @@ public class LinkedListMain {
         list5.popLast();
         System.out.println("Linked list for list5 after deleting last element in linked list is->");
         list5.show();
+        /**
+         * Insert 40 after 30
+         */
       System.out.println("****************************");
         LinkedList<Integer> list6=new LinkedList();
         list6.push(70);
@@ -54,5 +57,17 @@ public class LinkedListMain {
             System.out.println("Element not found!");
         else
             System.out.println("Element Found");
+        System.out.println("***************************");
+        LinkedList<Integer> list7=new LinkedList();
+        list7.push(70);
+        list7.push(30);
+        list7.push(56);
+        boolean success=list7.searchAndInsert(30,40);
+        if (success)
+            System.out.println("Element searched and Inserted Element!");
+        else
+            System.out.println("Element Search unsucessful!");
+
+        list7.show();
     }
 }
